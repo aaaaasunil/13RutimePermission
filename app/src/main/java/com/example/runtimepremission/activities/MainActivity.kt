@@ -44,13 +44,12 @@ class MainActivity : BaseActivity(), PremissionCallBack {
 
             else
                 requestPermissions(prem = permissionsArrayBelow11, this)
-
         }
     }
 
     /**
      * Sunil commit
-     * 
+     *
      */
     private fun setUpUI() {
 
