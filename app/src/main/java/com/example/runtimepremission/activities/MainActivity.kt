@@ -50,6 +50,7 @@ class MainActivity : BaseActivity(), PremissionCallBack {
 
     /**
      * Sunil commit
+     * 
      */
     private fun setUpUI() {
 
