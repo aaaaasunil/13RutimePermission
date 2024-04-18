@@ -48,6 +48,9 @@ class MainActivity : BaseActivity(), PremissionCallBack {
         }
     }
 
+    /**
+     * Sunil commit
+     */
     private fun setUpUI() {
 
         Toast.makeText(this, "onPremissionAllow", Toast.LENGTH_SHORT).show()
