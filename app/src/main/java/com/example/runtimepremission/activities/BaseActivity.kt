@@ -291,6 +291,7 @@ abstract class BaseActivity : AppCompatActivity() {
         mAlertDialog.show()
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
