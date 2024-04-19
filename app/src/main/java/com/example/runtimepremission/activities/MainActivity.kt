@@ -26,6 +26,22 @@ class MainActivity : BaseActivity(), PremissionCallBack {
 
     var cameraPhotoUri : Uri?=null
 
+
+    override fun onlyOpen() {
+        super.onlyOpen()
+    }
+
+    override fun abstractFun() {
+    }
+
+    override fun protectedOpenFun() {
+        super.protectedOpenFun()
+    }
+
+
+    override fun abstractOpenFun() {
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -134,5 +150,6 @@ class MainActivity : BaseActivity(), PremissionCallBack {
         requestPermissions(prem = permissionsArrayFor11, this)
 
     }
+
 
    }

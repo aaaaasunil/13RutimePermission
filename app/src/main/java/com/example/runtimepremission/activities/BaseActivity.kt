@@ -32,13 +32,56 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-open class BaseActivity : AppCompatActivity() {
+abstract class BaseActivity : AppCompatActivity() {
 
     private val RC_STORAGE_PREMISSION = 11000
     private val RC_REQUEST_PREMISSION = 12000
     val FILE_REQUEST_CODE = 1000
     val CAMERA_REQUEST_CODE = 1001
     var premissionCallBack: PremissionCallBack? = null
+
+    /**
+     * Have a body
+     * May be implement in subclass or not
+     */
+    open fun onlyOpen() {
+
+    }
+
+    /**
+     * Have no body
+     * Must implement in subclass
+     */
+    abstract fun abstractFun()
+
+    /**
+     * Have a body
+     * Not be implement in subclass
+     */
+    protected  fun protectedFun() {
+
+    }
+
+    private  fun privateFunGetData() {
+
+    }
+
+
+    /**
+     * Have a body
+     * implement in subclass if open is add with protected function
+     */
+    protected open fun protectedOpenFun() {
+
+    }
+
+
+    /**
+     * Have no body
+     * implement in subclass if abstract is add with protected function
+     */
+    protected abstract fun abstractOpenFun()
+
 
     private var permissionsArrayTill29 = arrayOf(
         Manifest.permission.READ_EXTERNAL_STORAGE,
@@ -395,4 +438,6 @@ open class BaseActivity : AppCompatActivity() {
             throw e
         }
     }
+
+
 }
