@@ -214,6 +214,7 @@ open class PermissionBaseActivity : AppCompatActivity() {
         mAlertDialog.show()
     }
 
+    @RequiresApi(Build.VERSION_CODES.Q)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         Log.d(TAG," : onActivityResult")
