@@ -6,7 +6,7 @@ on:
     branches: [ master ]
 jobs: 
   build:
-   runs-on: window-latest
+   runs-on: windows-latest
    steps:
       - name: Checkout
         uses: actions/checkout@v4.1.2
